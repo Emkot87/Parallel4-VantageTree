@@ -1,0 +1,198 @@
+gcc -O3 vtSerial.c -o vtSerial.out -lm -g utilFunctions.c
+gcc -O3 vtOmp.c -o vtOmp.out -fopenmp -lm -g utilFunctions.c
+nvcc vtCuda.cu -o vtCuda.out -O3 -g -lm utilFunctions.c
+nvcc vtCudaOmp.cu -o vtCudaOmp.out utilFunctions.c -Xcompiler -fopenmp -lgomp -O3 -lm 
+
+
+
+running ./vtSerial.out with 65536 16 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.050769+++-=-=-=-=-=-=-=-=-=-
+
+
+
+
+running ./vtCuda.out with 65536 16 0 100000 256 4
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.046456+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtCuda.out with 65536 16 0 100000 256 4
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.048622+++-=-=-=-=-=-=-=-=-=-
+
+
+
+everything is correct
+running ./vtCuda.out with 65536 16 0 100000 256 1
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.045631+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtCuda.out with 65536 16 0 100000 256 1
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.048400+++-=-=-=-=-=-=-=-=-=-
+
+
+
+
+everything is correct
+running ./vtCuda.out with 65536 16 0 100000 256 2
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.045708+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtCuda.out with 65536 16 0 100000 256 2
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.046764+++-=-=-=-=-=-=-=-=-=-
+
+
+
+
+everything is correct
+running ./vtCuda.out with 65536 16 0 100000 256 8
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.050399+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtCuda.out with 65536 16 0 100000 256 8
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.050052+++-=-=-=-=-=-=-=-=-=-
+
+
+
+
+everything is correct
+running ./vtCuda.out with 65536 16 0 100000 256 16
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.050402+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtCuda.out with 65536 16 0 100000 256 16
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.049736+++-=-=-=-=-=-=-=-=-=-
+
+
+
+
+everything is correct
+running ./vtCuda.out with 65536 16 0 100000 256 32
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.056279+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtCuda.out with 65536 16 0 100000 256 32
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.053674+++-=-=-=-=-=-=-=-=-=-
+
+
+
+
+everything is correct
+running ./vtSerial.out with 65536 32 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.091249+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtCuda.out with 65536 32 0 100000 256 2
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.072975+++-=-=-=-=-=-=-=-=-=-
+
+
+
+
+32765 indexes were wrong
+running ./vtSerial.out with 65536 64 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.188726+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtCuda.out with 65536 64 0 100000 256 1
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.158100+++-=-=-=-=-=-=-=-=-=-
+
+
+
+
+32724 indexes were wrong
+running ./vtSerial.out with 131072 16 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.152006+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtCuda.out with 131072 16 0 100000 256 4
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.104296+++-=-=-=-=-=-=-=-=-=-
+
+16381 indexes were wrong
+running ./vtSerial.out with 131072 32 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.190106+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtCuda.out with 131072 32 0 100000 256 2
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.149551+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtSerial.out with 131072 64 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.327274+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtCuda.out with 131072 64 0 100000 256 1
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.236619+++-=-=-=-=-=-=-=-=-=-
+
+1050 indexes were wrong
+running ./vtSerial.out with 262144 16 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.238473+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtCuda.out with 262144 16 0 100000 256 4
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.209789+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtSerial.out with 262144 32 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.388405+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtCuda.out with 262144 32 0 100000 256 2
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.305994+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtSerial.out with 262144 64 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.713912+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtCuda.out with 262144 64 0 100000 256 1
+
+
+-=-=-=-=-=-=-=-+++total time to create tree was 0.483830+++-=-=-=-=-=-=-=-=-=-
+
+65529 indexes were wrong

@@ -1,0 +1,373 @@
+gcc -O3 vtSerial.c -o vtSerial.out -lm -g utilFunctions.c
+gcc -O3 vtOmp.c -o vtOmp.out -fopenmp -lm -g utilFunctions.c
+nvcc vtCuda.cu -o vtCuda.out -O3 -g -lm utilFunctions.c
+nvcc vtCudaOmp.cu -o vtCudaOmp.out utilFunctions.c -Xcompiler -fopenmp -lgomp -O3 -lm 
+running ./vtSerial.out with 65536 16 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.048763+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtOmp.out with 65536 16 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.040022+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 16 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.025519+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 16 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.025559+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 16 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.034049+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 16 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.026809+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 16 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.039556+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtSerial.out with 65536 32 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.084551+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtOmp.out with 65536 32 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.042713+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 32 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.043100+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 32 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.047628+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 32 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.044566+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 32 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.051934+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 32 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.045553+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtSerial.out with 65536 64 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.153500+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtOmp.out with 65536 64 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.078865+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 64 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.097232+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 64 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.076441+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 64 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.084592+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 64 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.081999+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 65536 64 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.078919+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtSerial.out with 131072 16 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.103951+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtOmp.out with 131072 16 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.057264+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 131072 16 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.061831+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 131072 16 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.055213+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 131072 16 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.063638+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 131072 16 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.057430+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 131072 16 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.062838+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtSerial.out with 131072 32 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.173335+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtOmp.out with 131072 32 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.094775+++-=-=-=-=-=-=-=-=-=-
+
+2044 indexes were wrong
+running ./vtOmp.out with 131072 32 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.097790+++-=-=-=-=-=-=-=-=-=-
+
+2044 indexes were wrong
+running ./vtOmp.out with 131072 32 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.102572+++-=-=-=-=-=-=-=-=-=-
+
+2044 indexes were wrong
+running ./vtOmp.out with 131072 32 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.098377+++-=-=-=-=-=-=-=-=-=-
+
+2044 indexes were wrong
+running ./vtOmp.out with 131072 32 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.097417+++-=-=-=-=-=-=-=-=-=-
+
+2044 indexes were wrong
+running ./vtOmp.out with 131072 32 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.095350+++-=-=-=-=-=-=-=-=-=-
+
+2044 indexes were wrong
+running ./vtSerial.out with 131072 64 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.326300+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtOmp.out with 131072 64 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.170061+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 131072 64 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.172688+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 131072 64 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.168562+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 131072 64 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.168556+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 131072 64 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.164867+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 131072 64 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.180463+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtSerial.out with 262144 16 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.225150+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtOmp.out with 262144 16 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.136032+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 262144 16 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.120751+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 262144 16 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.122843+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 262144 16 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.126902+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 262144 16 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.139837+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 262144 16 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.119734+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtSerial.out with 262144 32 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.361993+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtOmp.out with 262144 32 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.210722+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 262144 32 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.203496+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 262144 32 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.204734+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 262144 32 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.201280+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 262144 32 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.206026+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtOmp.out with 262144 32 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.197698+++-=-=-=-=-=-=-=-=-=-
+
+everything is correct
+running ./vtSerial.out with 262144 64 0
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.676739+++-=-=-=-=-=-=-=-=-=-
+
+running ./vtOmp.out with 262144 64 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.363875+++-=-=-=-=-=-=-=-=-=-
+
+4597 indexes were wrong
+running ./vtOmp.out with 262144 64 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.355788+++-=-=-=-=-=-=-=-=-=-
+
+4597 indexes were wrong
+running ./vtOmp.out with 262144 64 0 100000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.360739+++-=-=-=-=-=-=-=-=-=-
+
+4597 indexes were wrong
+running ./vtOmp.out with 262144 64 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.363052+++-=-=-=-=-=-=-=-=-=-
+
+4597 indexes were wrong
+running ./vtOmp.out with 262144 64 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.357570+++-=-=-=-=-=-=-=-=-=-
+
+4597 indexes were wrong
+running ./vtOmp.out with 262144 64 0 10000
+
+
+-=-=-=-=-=-=-=-+++total time to create tree: 0.362213+++-=-=-=-=-=-=-=-=-=-
+
+4597 indexes were wrong
